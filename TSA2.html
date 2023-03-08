@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>   
+ <meta charset="UTF-8">     
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+ <title>Module 3</title>   
+ <style>*{box-sizing: border-box;}.weeks-cont,
+ .box-cont {float: left;width: 50%;padding: 10px;height: 300px;padding: 50px;top: 10%;} 
+ .box-cont {height: 350px;width: 350px;border: 10px solid white;margin-top: 80px;}
+ .container::after {content: "";display: table;clear: both;}
+ button {display: block;padding: 10px;width: 150px;margin: 20px;}button:hover {padding: 20px;width: 170px;transition: 0.5s;}    
+ </style>    
+ <script>function change(color) {document.getElementById("box-cont").style.borderColor = color;}    
+ </script>
+ </head> 
+ <body>    
+ <div class="container">
+ <div class="weeks-cont">
+ <button onclick="change('blueviolet')" style="background-color: blueviolet;">Monday</button>   
+ <button onclick="change('violet')" style="background-color: violet;">Tuesday</button>
+ <button onclick="change('blue')" style="background-color: blue;">Wednesday</button>            
+ <button onclick="change('greenyellow')" style="background-color: greenyellow;">Thursday</button>            
+ <button onclick="change('yellow')" style="background-color: yellow;">Friday</button>            
+ <button onclick="change('orange')" style="background-color: orange;">Saturday</button>            
+ <button onclick="change('red')" style="background-color: red;">Sunday</button>         </div>        
+ <div class="box-cont" id="box-cont"> 
+ </div> 
+ </div>
+ 
+ <div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <center>
+<a href="Index.html" class="btn btn-outline-light">GO BACK</a>
+</center>
+ </div>
+ </body> 
+ </html>
+
+ 
+

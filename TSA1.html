@@ -1,0 +1,62 @@
+<html>
+<head>
+
+<script type="text/javascript">
+  alert("This My TSA1");
+</script>
+<style>
+	body
+	{font-family:monospace;
+	text-align:center;
+	font-size:40px;
+	position: absolute;
+    top: 30%;
+    bottom: 0;
+    left: 0;
+    right: 0;}
+	</style>
+</head>
+
+<body id='bodycolor'>
+
+	
+<h1  valign="center" class="textcolor">McLeen Kyle O. Cruz</h1><br>
+
+<p   valign="center" class="textcolor">Technical Assesment 1 </p><br>
+
+
+<button type="button"  onclick="changeBackground();changeText();">Click me </button>
+ <br>
+<br>
+<a href="Index.html" class="button">Go Back</a>
+
+
+<script>
+
+var colors = ["green", "red", "blue","pink","yellow"];
+    var colorIndex = 0;
+    function changeText() {
+        var col = document.getElementsByClassName ("textcolor");
+      if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        for (var i = 0; i < col.length; i++){
+          col[i].style.color = colors[colorIndex]
+        } 
+        colorIndex++;
+    }
+
+var colors = ["red", "blue", "green","yellow","pink"];
+    var colorIndex = 0;
+    function changeBackground() {
+        var col = document.getElementById("bodycolor");
+        if( colorIndex >= colors.length ) {
+            colorIndex = 0;
+        }
+        col.style.backgroundColor = colors[colorIndex];
+        colorIndex++;
+    }
+</script>
+</body>
+
+</html>
